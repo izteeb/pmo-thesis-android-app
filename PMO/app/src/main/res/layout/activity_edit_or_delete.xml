@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad1"
+    tools:context="com.example.izteeb.PMO.edit_or_delete">
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/arrow_back"
+        android:id="@+id/back_bttn6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@id/back_bttn6"
+        android:layout_toRightOf="@id/back_bttn6"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit or Delete Medication"
+        android:fontFamily="monospace"
+        android:textColor="#d1f3ff"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/back_bttn6"
+        android:layout_marginTop="69dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/delete_med"
+        android:id="@+id/imageView13"
+        android:layout_alignTop="@+id/imageView14"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/edit_med"
+        android:id="@+id/imageView14"
+        android:layout_marginEnd="86dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp" />
+
+</RelativeLayout>

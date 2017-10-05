@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad2"
+    tools:context="com.example.izteeb.PMO.delete_medication">
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@mipmap/arrow_back"
+        android:id="@+id/back_bttn2"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:layout_marginLeft="5dp"
+        android:text="Delete medication."
+        android:layout_alignBaseline="@id/back_bttn2"
+        android:layout_toEndOf="@id/back_bttn2"
+        />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_below="@id/back_bttn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/delete_username_text_layout"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/delete_username_text"
+                style="@style/Base.V7.Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:gravity="left"
+                android:hint="Username"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFF"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/delete_username_text_layout"
+            android:id="@+id/delete_slot_text_layout"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete_slot_text"
+                style="@style/Base.V7.Widget.AppCompat.EditText"
+                android:fontFamily="monospace"
+                android:hint="Slot number"
+                android:singleLine="true"
+                android:textColor="#FFF"
+                android:textColorHint="@color/white"
+                android:inputType="number"
+                android:gravity="left"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@drawable/custom_button"
+            android:id="@+id/search_on_delete"
+
+            android:layout_alignBaseline="@+id/delete_user_slot"
+            android:layout_alignBottom="@+id/delete_user_slot"
+            android:layout_toStartOf="@+id/delete_user_slot"
+            android:layout_marginEnd="50dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_user_slot"
+            android:text="delete"
+            android:paddingRight="35dp"
+            android:paddingLeft="35dp"
+            android:background="@drawable/custom_button2"
+            android:layout_below="@+id/delete_slot_text_layout"
+            android:layout_alignEnd="@+id/delete_slot_text_layout"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ListView
+            android:layout_below="@id/delete_user_slot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lv_delete_user">
+        </ListView>
+
+</RelativeLayout>

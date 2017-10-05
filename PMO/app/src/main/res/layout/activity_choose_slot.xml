@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad1"
+    tools:context="com.example.izteeb.PMO.chooseSlot">
+
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:id="@+id/bckBttn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_toRightOf="@id/bckBttn"
+            android:layout_alignBaseline="@id/bckBttn"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bckBttn"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/grad1"
+        android:id="@+id/rl53">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:text="CHOOSE SLOT"
+            android:textSize="20sp"
+            android:id="@+id/tvname1"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp" />
+
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_no_background_white_border"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout">
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="fill"
+                android:text="Slot 1"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot1"
+                android:background="@drawable/button_circle_no_background"
+                />
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/slot1"
+                android:text="Slot 2"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot2"
+                android:background="@drawable/button_circle_no_background"
+                />
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/slot2"
+                android:text="Slot 3"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot3"
+                android:background="@drawable/button_circle_no_background"
+                />
+
+            <Button
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/slot1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Slot 4"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot4"
+                android:background="@drawable/button_circle_no_background"
+                />
+            <Button
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Slot 5"
+                android:layout_below="@id/slot2"
+                android:layout_toRightOf="@id/slot4"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot5"
+                android:background="@drawable/button_circle_no_background"
+                />
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/slot5"
+                android:layout_below="@id/slot3"
+                android:layout_gravity="fill"
+                android:text="Slot 6"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot6"
+                android:background="@drawable/button_circle_no_background"
+                />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="fill"
+                android:layout_below="@id/slot4"
+                android:text="Slot 7"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot7"
+                android:background="@drawable/button_circle_no_background"
+                />
+            <Button
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/slot7"
+                android:layout_below="@id/slot5"
+                android:layout_gravity="fill"
+                android:text="Slot 8"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot8"
+                android:background="@drawable/button_circle_no_background"
+                />
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="fill"
+                android:layout_toRightOf="@id/slot8"
+                android:layout_below="@id/slot6"
+                android:text="Slot 9"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:id="@+id/slot9"
+                android:background="@drawable/button_circle_no_background"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

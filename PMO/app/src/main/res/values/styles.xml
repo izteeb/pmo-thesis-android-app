@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="EditTextCustomHolo" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ButtonCustomHolo" parent="android:Widget.Button">
+        <item name="android:background">@drawable/apptheme_btn_default_holo_light</item>
+        <item name="android:textColor">#FFFF</item>
+    </style>
+
+    <style name="ButtonCustomHoloDark" parent="android:Widget.Button">
+        <item name="android:background">@drawable/apptheme_btn_default_normal_holo_dark</item>
+        <item name="android:textColor">#FFFF</item>
+    </style>
+
+    <style name="app_theme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@color/bkg</item>
+        <item name="android:listViewStyle">@style/TransparentListView</item>
+    </style>
+
+    <style name="TransparentListView" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/spinnerstyle_spinner_default_holo_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

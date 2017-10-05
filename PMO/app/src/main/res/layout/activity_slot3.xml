@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context="com.example.izteeb.PMO.slot3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl34"
+            app:cardBackgroundColor="@color/slate">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/backicon"
+                android:id="@+id/bckBttn4"
+                android:onClick="back3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="SLOT 3"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/b34"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="312dp"
+                android:background="@drawable/cancelicon"
+                android:onClick="cancel3"/>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_below="@id/rl34"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_design1"
+            android:id="@+id/rl31">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv31"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv31"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/EditTextCustomHolo"
+                android:textColor="@color/black"
+                android:textColorHint="@color/slate"
+                android:textSize="17sp"
+                android:hint="Enter Medicine Name"
+                android:id="@+id/et31"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et31"
+                android:id="@+id/rl35">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv35"
+                    android:text="Dosage"
+                    android:fontFamily="monospace"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/minusBttn3"
+                    android:layout_toRightOf="@id/tv35"
+                    android:layout_marginLeft="49dp"
+                    android:background="@drawable/round_button"
+                    android:onClick="minusDosage3"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et32"
+                    style="@style/EditTextCustomHolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/minusBttn3"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/slate"
+                    android:textColorHint="@color/slate"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="+"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/round_button"
+                    android:layout_toRightOf="@id/et32"
+                    android:onClick="addDosage3"
+                    android:id="@+id/addBttn3"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl35"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rl36">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv36"
+                    android:text="Quantity"
+                    android:fontFamily="monospace"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/minusQty3"
+                    android:layout_toRightOf="@id/tv36"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/round_button"
+                    android:onClick="minusQuantity3"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et33"
+                    style="@style/EditTextCustomHolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/minusQty3"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/slate"
+                    android:textColorHint="@color/slate"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="+"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/round_button"
+                    android:layout_toRightOf="@id/et33"
+                    android:onClick="addQuantity3"
+                    android:id="@+id/addQty3"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl32"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_below="@id/rl31"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/layout_design1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Schedule"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv32"
+                />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv32"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/b31"
+                android:padding="5dp"
+                android:background="@drawable/time_icon1"/>
+            <TextView
+                android:id="@+id/tv37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Medication Time"
+                android:textColorHint="@color/slate"
+                android:textColor="@color/black"
+                android:layout_alignBaseline="@id/b31"
+                android:layout_alignBottom="@id/b31"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="38dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl32"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/layout_design1"
+            android:id="@+id/rl33"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Day"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv34"
+                />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv34"
+                android:background="@drawable/date_picker1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/slate"
+                android:id="@+id/b33"
+                />
+            <TextView
+                android:id="@+id/tv38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Medication Date"
+                android:textColorHint="@color/slate"
+                android:textColor="@color/black"
+                android:layout_marginEnd="40dp"
+                android:layout_alignBaseline="@+id/b33"
+                android:layout_alignBottom="@+id/b33"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_no_background"
+            android:textStyle="normal|bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="NEXT"
+            android:id="@+id/b32"
+            android:onClick="saveData3"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/glacier_blue"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+
+<!--
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row_month"
+        android:text="9"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/grey"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slash1"
+            android:layout_toRightOf="@id/row_month"
+            android:text="/"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_day"
+            android:layout_toRightOf="@id/slash1"
+            android:text="8"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slash2"
+            android:layout_toRightOf="@id/row_day"
+            android:text="/"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_year"
+            android:layout_toRightOf="@id/slash2"
+            android:text="2017"
+            android:textSize="15sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            />
+-->
+
+        <RelativeLayout
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grad1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slot"
+            android:textColor="@color/white"
+            android:id="@+id/slotText"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"/>
+            <TextView
+                android:layout_toRightOf="@id/slotText"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/row_slotnumber"
+                android:text="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_toRightOf="@id/row_slotnumber"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/row_medicinename"
+                android:text="Medicine Name"
+                android:gravity="left"
+                android:fontFamily="monospace"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/row_user"
+                android:fontFamily="monospace"
+                android:textColor="@color/slate"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+
+                />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl01"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="5dp"
+                        android:layout_below="@id/row_medicinename"
+                        android:layout_alignStart="@id/row_medicinename"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dosage: "
+                            android:textSize="15sp"
+                            android:id="@+id/tvDosage"
+                            android:textColor="@color/warm_gray"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvDosage"
+                            android:text="Quantity: "
+                            android:textColor="@color/warm_gray"
+                            android:textSize="15sp"
+                            android:id="@+id/qtyTV"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time:"
+                            android:textColor="@color/warm_gray"
+                            android:textSize="15sp"
+                            android:paddingBottom="10dp"
+                            android:layout_below="@id/qtyTV"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/row_medicinename"
+                        android:layout_toEndOf="@+id/rl01">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/row_dosage"
+                            android:text="Dosage"
+                            android:gravity="left"
+                            android:fontFamily="sans-serif"
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/row_dosage"
+                            android:text="quantity"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:id="@+id/row_quantity"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="08"
+                            android:id="@+id/row_hour"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_below="@id/row_quantity"
+                            android:paddingBottom="10dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvBetween"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:text=":"
+                            android:paddingBottom="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@id/row_hour"
+                            android:layout_below="@id/row_quantity"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/row_quantity"
+                            android:layout_toRightOf="@id/tvBetween"
+                            android:text="09"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/row_min"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="am"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/row_ampm"
+                            android:textColor="@color/white"
+                            android:layout_below="@id/row_quantity"
+                            android:layout_toRightOf="@id/row_min"
+                            android:layout_marginLeft="5dp"
+                           />
+
+
+
+                    </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+

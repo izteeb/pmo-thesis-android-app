@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#234"
+    tools:context="com.example.izteeb.PMO.edit_medication">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+               android:layout_margin="15dp"
+                android:background="@mipmap/arrow_back"
+                android:id="@+id/bckBttn2z"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Medication."
+                android:textSize="15sp"
+                android:textColor="@color/warm_gray"
+                android:layout_alignBaseline="@id/bckBttn2z"
+                android:layout_toEndOf="@id/bckBttn2z"
+                android:id="@+id/tv11z"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="monospace"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/tvnamez"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv113z"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="monospace"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv19z"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/bckBttn2z"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_design1"
+                android:id="@+id/rl11z">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/et11z1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/slate">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et11z"
+                        style="@style/Base.V7.Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:hint="Medication Name"
+                        android:paddingRight="180dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/slate"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et11z1"
+                    android:id="@+id/rl15z">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv15z"
+                        android:text="Dosage"
+                        android:fontFamily="monospace"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        />
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/minusBttnz"
+                        android:layout_toRightOf="@id/tv15z"
+                        android:layout_marginLeft="32dp"
+                        android:background="@drawable/minus_button_box"
+                        android:onClick="minusDosagez"
+                        />
+
+                    <EditText
+                        android:id="@+id/et12z"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_toRightOf="@id/minusBttnz"
+                        android:hint="0"
+                        android:background="@drawable/textround"
+                        android:inputType="number"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/slate"
+                        android:textColorHint="@color/slate"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/add_button_box"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@id/et12z"
+                        android:onClick="addDosagez"
+                        android:id="@+id/addBttnz"
+                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_toRightOf="@id/addBttnz"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#808B96"
+                        >
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl15z"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rl16z">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv16z"
+                        android:text="Quantity"
+                        android:fontFamily="monospace"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        />
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/minusQtyz"
+                        android:layout_toRightOf="@id/tv16z"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/minus_button_box"
+                        android:onClick="minusQuantityz"
+                        />
+
+                    <EditText
+                        android:id="@+id/et13z"
+                        android:background="@drawable/textround"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_toRightOf="@id/minusQtyz"
+                        android:hint="0"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/slate"
+                        android:textColorHint="@color/slate"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/add_button_box"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/et13z"
+                        android:onClick="addQuantityz"
+                        android:id="@+id/addQtyz"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl12z"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_below="@id/rl11z"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/layout_design1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medication Schedule"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="monospace"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv12z"
+                    />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/tv12z"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/b11z"
+                    android:padding="5dp"
+                    android:background="@drawable/time_icon1"/>
+                <TextView
+                    android:id="@+id/tv17z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="Medication Time"
+                    android:textColorHint="@color/slate"
+                    android:textColor="@color/black"
+                    android:layout_alignBaseline="@id/b11z"
+                    android:layout_alignBottom="@id/b11z"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="38dp"
+                    android:fontFamily="monospace"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl12z"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/layout_design1"
+                android:id="@+id/rl13z"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Day"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="monospace"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv14z"
+                    />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/tv14z"
+                    android:background="@drawable/date_picker1"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/slate"
+                    android:id="@+id/b13z"
+                    />
+                <TextView
+                    android:id="@+id/tv18z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="Medication Date"
+                    android:textColorHint="@color/slate"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="40dp"
+                    android:layout_alignBaseline="@id/b13z"
+                    android:layout_alignBottom="@id/b13z"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="monospace"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:textStyle="normal|bold"
+        android:text="SAVE"
+        android:id="@+id/saveE"
+        android:onClick="saveDataz"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0"
+        />
+</LinearLayout>
+ </RelativeLayout>
+
+
+

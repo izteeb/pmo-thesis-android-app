@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "571328145057",
+    "firebase_url": "https://thesisportablemedicineorganize.firebaseio.com",
+    "project_id": "thesisportablemedicineorganize",
+    "storage_bucket": "thesisportablemedicineorganize.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571328145057:android:e15a8504e9aefc47",
+        "android_client_info": {
+          "package_name": "com.example.izteeb.thesisportablemedicineorganizerwithandroidapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571328145057-ejkvlk4op6uvds0eu4ivo7oj609b3p4h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.izteeb.thesisportablemedicineorganizerwithandroidapplication",
+            "certificate_hash": "e794d40693764e0293d728161fea783a64f9fb78"
+          }
+        },
+        {
+          "client_id": "571328145057-lb2sq18utci1ohlt7j4aodh1mo46cnlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkdHJmxTGpRhKym1UzIPVorZCydEB5ujo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571328145057-lb2sq18utci1ohlt7j4aodh1mo46cnlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad1"
+    tools:context="com.example.izteeb.PMO.slot1">
+
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/arrow_back"
+            android:id="@+id/bckBttn2"
+            android:onClick="back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="monospace"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/tvname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="monospace"
+            android:layout_gravity="center_horizontal"
+            android:text="SLOT"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/bckBttn2"
+            android:layout_alignBaseline="@id/bckBttn2"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv113"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBaseline="@id/textView"
+            android:fontFamily="monospace"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/textView"
+            android:id="@+id/tv19"/>
+
+        <Button
+            android:id="@+id/b14"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/cancelicon"
+            android:onClick="cancel"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true" />
+
+     <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medication Name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="monospace"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:id="@+id/tv11"
+        />
+ -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_below="@id/bckBttn2">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_design1"
+            android:id="@+id/rl11">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etet61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/slate">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et11"
+                    style="@style/EditTextCustomHolo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:hint="Enter medicine name"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/warm_gray"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etet61"
+                android:id="@+id/rl15">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv15"
+                    android:text="Dosage"
+                    android:fontFamily="monospace"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/minusBttn"
+                    android:layout_toRightOf="@id/tv15"
+                    android:layout_marginLeft="32dp"
+                    android:background="@drawable/minus_button_box"
+                    android:onClick="minusDosage"
+                    />
+
+                <EditText
+                    android:id="@+id/et12"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/minusBttn"
+                    android:hint="0"
+                    android:background="@drawable/textround"
+                    android:inputType="number"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/slate"
+                    android:textColorHint="@color/slate"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/add_button_box"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/et12"
+                    android:onClick="addDosage"
+                    android:id="@+id/addBttn"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/addBttn"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#808B96"
+                    >
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl15"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rl16">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv16"
+                    android:text="Quantity"
+                    android:fontFamily="monospace"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <Button
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/minusQty"
+                    android:layout_toRightOf="@id/tv16"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/minus_button_box"
+                    android:onClick="minusQuantity"
+                    />
+
+                <EditText
+                    android:id="@+id/et13"
+                    android:background="@drawable/textround"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/minusQty"
+                    android:hint="0"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/slate"
+                    android:textColorHint="@color/slate"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/add_button_box"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/et13"
+                    android:onClick="addQuantity"
+                    android:id="@+id/addQty"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl12"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_below="@id/rl11"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout_design1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Schedule"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv12"
+                />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv12"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/b11"
+                android:padding="5dp"
+                android:background="@drawable/time_icon1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="A"
+                android:id="@+id/a"
+                android:textColorHint="@color/slate"
+                android:textColor="@color/black"
+                android:layout_alignBaseline="@id/b11"
+                android:layout_alignBottom="@id/b11"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="MM"
+                android:textColorHint="@color/slate"
+                android:textColor="@color/black"
+                android:layout_alignBaseline="@id/b11"
+                android:layout_alignBottom="@id/b11"
+                android:layout_toLeftOf="@id/a"
+                android:id="@+id/mm"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="HH"
+                android:textColorHint="@color/slate"
+                android:textColor="@color/black"
+                android:layout_alignBaseline="@id/b11"
+                android:layout_alignBottom="@id/b11"
+                android:layout_toLeftOf="@id/mm"
+                />
+
+
+
+
+
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout_design1"
+            android:id="@+id/rl13"
+            android:layout_below="@+id/rl12"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Day"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv14"
+                />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv14"
+                android:background="@drawable/date_picker1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/slate"
+                android:id="@+id/b13"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="49dp"
+                android:layout_alignTop="@+id/b13"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/rl111">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv18mm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="MM"
+                    android:textColorHint="@color/slate"
+                    android:textColor="@color/black"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv18dd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="DD"
+                    android:textColorHint="@color/slate"
+                    android:textColor="@color/black"
+                    android:fontFamily="monospace"
+                    android:layout_toRightOf="@id/tv18mm"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/tv18yyyy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="YYYY"
+                    android:textColorHint="@color/slate"
+                    android:textColor="@color/black"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv18dd"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl13"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rl151"
+            android:background="@drawable/layout_design1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Interval"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="monospace"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/text5"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:textColor="@color/slate"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp"
+                android:id="@+id/text8"
+                android:text="Choose interval: "/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:id="@+id/intervalSpin"
+                android:layout_toRightOf="@id/text8"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+
+                >
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl151"
+            android:background="@drawable/layout_design1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="17sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv90"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:hint="Enter Description"
+                android:textColorHint="@color/slate"
+                android:id="@+id/description"
+                android:textSize="15sp"
+                android:layout_below="@id/tv90"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/textround"
+
+                />
+        </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_button5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Save"
+        android:textSize="15sp"
+        android:id="@+id/b12"
+
+        />
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+

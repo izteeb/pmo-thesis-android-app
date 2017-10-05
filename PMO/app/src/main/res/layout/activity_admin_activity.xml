@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad1"
+    tools:context="com.example.izteeb.PMO.Admin_activity">
+
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/bckBttn61"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="back4"
+            android:background="@mipmap/arrow_back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeText61"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="16dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@id/bckBttn61"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView61"
+        android:layout_toRightOf="@id/welcomeText61"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:text="USERNAME"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_gravity="left"
+        android:layout_alignBaseline="@id/bckBttn61"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/add_admin"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/imageView9"
+        android:layout_toStartOf="@+id/textView61" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/view_user"
+        android:id="@+id/imageView12"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView11" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/edit_user"
+        android:id="@+id/imageView11"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/delete_user"
+        android:id="@+id/imageView10"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView3" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/search_user"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView10" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/view_medication"
+        android:id="@+id/imageView9"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView2" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/edit_med"
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView9" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/delete_med"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button_white"
+        android:padding="2dp"
+        android:src="@drawable/search_med"
+        android:layout_marginStart="20dp"
+        android:id="@+id/imageView3"
+        android:layout_marginBottom="193dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageView4" />
+
+
+
+</RelativeLayout>

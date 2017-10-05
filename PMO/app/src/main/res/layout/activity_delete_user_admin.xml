@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad2"
+    tools:context="com.example.izteeb.PMO.deleteUserAdmin">
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/arrow_back"
+        android:layout_margin="15dp"
+        android:id="@+id/back_bttn9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/back_bttn9"
+        android:text="Delete User"
+        android:textSize="15sp"
+        android:textColor="@color/warm_gray"
+        android:layout_alignBaseline="@id/back_bttn9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please click delete button to delete user or admin."
+        android:textSize="12sp"
+        android:textColor="@color/slate"
+        android:layout_below="@id/back_bttn9"
+        android:layout_marginLeft="15dp"
+
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_bttn9"
+        android:id="@+id/listView4"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+
+    </ListView>
+</RelativeLayout>

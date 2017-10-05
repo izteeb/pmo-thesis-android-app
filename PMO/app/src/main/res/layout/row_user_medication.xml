@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/grad1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_search_med"
+            android:text="MEDICATION"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_search_med"
+            android:text=""
+            android:id="@+id/tv_search_med1"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_search_time"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="TIME"
+            android:layout_below="@id/tv_search_med"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_search_time"
+            android:layout_below="@id/tv_search_med"
+            android:text=""
+            android:id="@+id/tv_search_time1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_search_slot"
+            android:text="SLOT"
+            android:layout_below="@id/tv_search_time"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_search_slot"
+            android:layout_below="@id/tv_search_time"
+            android:text=""
+            android:id="@+id/tv_search_slot1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_search_slot"
+            android:text="DESCRIPTION"
+            android:id="@+id/tv_search_desc"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/tv_search_desc"
+            android:layout_below="@id/tv_search_slot"
+            android:text=""
+            android:id="@+id/tv_search_desc1"
+            android:maxLines="3"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv21"
+        android:text="Medicine Name"
+        android:textSize="20dp"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv22"
+        android:text="Dosage"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/tv21"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/tv22"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv23"
+        />
+</LinearLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context="com.example.izteeb.PMO.slot2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl24"
+            app:cardBackgroundColor="@color/slate">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/backicon"
+                android:id="@+id/bckBttn3"
+                android:onClick="back2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="SLOT 2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/b24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="312dp"
+                android:background="@drawable/cancelicon"
+                android:onClick="cancel2"/>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_below="@id/rl24"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_design1"
+            android:id="@+id/rl21">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv21"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv21"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/EditTextCustomHolo"
+                android:textColor="@color/black"
+                android:textColorHint="@color/slate"
+                android:textSize="17sp"
+                android:hint="Enter Medicine Name"
+                android:id="@+id/et21"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et21"
+                android:id="@+id/rl25">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv25"
+                    android:text="Dosage"
+                    android:fontFamily="monospace"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/minusBttn2"
+                    android:layout_toRightOf="@id/tv25"
+                    android:layout_marginLeft="49dp"
+                    android:background="@drawable/round_button"
+                    android:onClick="minusDosage2"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et22"
+                    style="@style/EditTextCustomHolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/minusBttn2"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/slate"
+                    android:textColorHint="@color/slate"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="+"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/round_button"
+                    android:layout_toRightOf="@id/et22"
+                    android:onClick="addDosage2"
+                    android:id="@+id/addBttn2"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl25"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rl26">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv26"
+                    android:text="Quantity"
+                    android:fontFamily="monospace"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/minusQty2"
+                    android:layout_toRightOf="@id/tv26"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/round_button"
+                    android:onClick="minusQuantity2"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et23"
+                    style="@style/EditTextCustomHolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/minusQty2"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/slate"
+                    android:textColorHint="@color/slate"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="+"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/round_button"
+                    android:layout_toRightOf="@id/et23"
+                    android:onClick="addQuantity2"
+                    android:id="@+id/addQty2"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl22"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_below="@id/rl21"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/layout_design1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Schedule"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv22"
+                />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv22"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/b21"
+                android:padding="5dp"
+                android:background="@drawable/time_icon1"/>
+            <TextView
+                android:id="@+id/tv27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Medication Time"
+                android:textColorHint="@color/slate"
+                android:textColor="@color/black"
+                android:layout_alignBaseline="@id/b21"
+                android:layout_alignBottom="@id/b21"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="38dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl22"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/layout_design1"
+            android:id="@+id/rl23"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Day"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:id="@+id/tv24"
+                />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv24"
+                android:background="@drawable/date_picker1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/slate"
+                android:id="@+id/b23"
+                />
+            <TextView
+                android:id="@+id/tv28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:hint="Medication Date"
+                android:textColorHint="@color/slate"
+                android:textColor="@color/black"
+                android:layout_marginEnd="40dp"
+                android:layout_alignBaseline="@id/b23"
+                android:layout_alignBottom="@id/b23"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_no_background"
+            android:textStyle="normal|bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="NEXT"
+            android:id="@+id/b22"
+            android:onClick="saveData2"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
